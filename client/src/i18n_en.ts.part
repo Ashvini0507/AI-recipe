@@ -1,0 +1,126 @@
+const resources = {
+    en: {
+        translation: {
+            "header": {
+                "title": "Smart Recipe AI",
+                "greeting": "Hello, {{name}}!",
+                "recipes": "Recipes",
+                "calendar": "Calendar",
+                "shopping": "Shopping",
+                "stats": "Statistics",
+                "logout": "Logout"
+            },
+            "festival": {
+                "veg_first": "Showing vegetarian dishes first!"
+            },
+            "home": {
+                "title": "Smart Recipe Hub",
+                "subtitle": "Discover AI-powered recipes based on your ingredients",
+                "hero_title": "What's in your kitchen?",
+                "hero_subtitle": "Select your ingredients and let AI suggest the perfect meal",
+                "select_ingredients": "Select Ingredients",
+                "search_placeholder": "Search recipes...",
+                "veg": "🟢 Vegetarian",
+                "non_veg": "🔴 Non-Vegetarian",
+                "all": "⭐ All Recipes",
+                "any_meal": "Any Meal",
+                "breakfast": "Breakfast",
+                "lunch": "Lunch",
+                "dinner": "Dinner",
+                "ingredients_btn": "Ingredients",
+                "feed": "Feed",
+                "recommended_for_you": "Recommended for your diet",
+                "no_recipes": "No recipes found. Try adjusting your ingredients."
+            },
+            "nav": {
+                "home": "Home",
+                "calendar": "Calendar",
+                "favorites": "My Recipes",
+                "shopping": "Shopping",
+                "profile": "Profile"
+            },
+            "favorites": {
+                "title": "My Recipes",
+                "empty": "No favorites yet",
+                "empty_subtitle": "Save recipes you love to build your personal cookbook.",
+                "recipe_count": "{{count}} saved recipes"
+            },
+            "auth": {
+                "login": "Login",
+                "signup": "Sign Up",
+                "name": "Name",
+                "email": "Email",
+                "password": "Password",
+                "diet_preference": "Diet Preference",
+                "vegetarian": "Vegetarian",
+                "non_veg": "Non-Vegetarian",
+                "language": "Language",
+                "placeholder_name": "Enter your name",
+                "placeholder_email": "Enter your email",
+                "placeholder_password": "Enter your password",
+                "no_account": "Don't have an account? Sign up",
+                "have_account": "Already have an account? Login",
+                "subtitle": "Your Intelligent Cooking Companion"
+            },
+            "ingredients": {
+                "title": "Select Ingredients",
+                "selected": "{{count}} item selected",
+                "selected_plural": "{{count}} items selected",
+                "clear_all": "Clear All",
+                "apply": "Apply Selection",
+                "categories": {
+                    "vegetables": "🥬 Vegetables",
+                    "fruits": "🍎 Fruits",
+                    "spices": "🌶️ Spices",
+                    "dairy": "🥛 Dairy",
+                    "meat": "🍖 Meat",
+                    "grains": "🌾 Grains"
+                }
+            },
+            "ingredients_names": {
+                "Tomato": "Tomato", "Onion": "Onion", "Potato": "Potato", "Carrot": "Carrot", "Spinach": "Spinach", "Bell Pepper": "Bell Pepper", "Broccoli": "Broccoli", "Cauliflower": "Cauliflower", "Lemon": "Lemon", "Mango": "Mango", "Turmeric": "Turmeric", "Cumin": "Cumin", "Coriander": "Coriander", "Garam Masala": "Garam Masala", "Red Chili": "Red Chili", "Garlic": "Garlic", "Ginger": "Ginger", "Milk": "Milk", "Yogurt": "Yogurt", "Paneer": "Paneer", "Butter": "Butter", "Cheese": "Cheese", "Chicken": "Chicken", "Beef": "Beef", "Fish": "Fish", "Mutton": "Mutton", "Rice": "Rice", "Wheat Flour": "Wheat Flour", "Lentils": "Lentils", "Pasta": "Pasta", "Cucumber": "Cucumber", "Mushroom": "Mushroom", "Orange": "Orange", "Strawberry": "Strawberry", "Star Anise": "Star Anise", "Cardamom": "Cardamom", "Egg": "Egg", "Lamb": "Lamb", "Oats": "Oats", "Quinoa": "Quinoa", "Curry Leaves": "Curry Leaves", "Mustard Seeds": "Mustard Seeds", "Coconut": "Coconut", "Tamarind": "Tamarind"
+            },
+            "recipes": {
+                "rec-1": { "title": "Palak Paneer", "instructions": ["Blanch spinach for 2 mins", "Puree with ginger and garlic", "Sauté onions and spices", "Add puree and simmer", "Add paneer cubes", "Serve hot"] },
+                "rec-2": { "title": "Grilled Chicken", "instructions": ["Marinate chicken with yogurt and spices", "Grill for 15-20 mins", "Serve with salad"] },
+                "rec-3": { "title": "Creamy Pasta", "instructions": ["Boil pasta", "Make cheese sauce with milk", "Toss pasta in sauce", "Garnish and serve"] },
+                "rec-4": { "title": "Garden Salad", "instructions": ["Chop vegetables", "Toss with lemon juice", "Season and serve"] },
+                "rec-5": { "title": "Chicken Biryani", "instructions": ["Marinate chicken", "Layer with parboiled rice", "Dum cook for 25 mins", "Serve hot"] },
+                "rec-6": { "title": "Margherita Pizza", "instructions": ["Roll out dough", "Spread sauce and cheese", "Bake at 450°F", "Slice and serve"] },
+                "rec-7": { "title": "Tom Yum Soup", "instructions": ["Boil aromatics", "Add fish and cook", "Add lemon and serve"] },
+                "rec-8": { "title": "Grilled Steak", "instructions": ["Season beef", "Grill to preference", "Rest and serve"] },
+                "rec-9": { "title": "Sushi Rolls", "instructions": ["Prepare sushi rice", "Roll with fish and veg", "Slice and serve"] },
+                "rec-10": { "title": "Classic Burger", "instructions": ["Grill patty", "Assemble with bun and veg", "Serve with fries"] },
+                "rec-11": { "title": "Dal Tadka", "instructions": ["Cook lentils", "Sauté spices and aromatics", "Mix and serve"] },
+                "rec-12": { "title": "Paneer Tikka", "instructions": ["Marinate paneer", "Skewer and grill", "Serve with chutney"] },
+                "rec-13": { "title": "Idli & Sambar", "instructions": ["Steam idlis", "Prepare lentil stew", "Serve together"] },
+                "rec-14": { "title": "Bisi Bele Bath", "instructions": ["Cook rice and lentils", "Add tamarind and spice", "Top with ghee"] },
+                "rec-15": { "title": "Chicken Chettinad", "instructions": ["Roast spices", "Cook chicken with paste", "Serve with rice"] },
+                "rec-16": { "title": "Ven Pongal", "instructions": ["Roast moong dal", "Cook with rice", "Temper and serve"] },
+                "rec-17": { "title": "Crispy Dosa", "instructions": ["Ferment batter", "Spread thinly on tawa", "Cook until crispy"] },
+                "rec-18": { "title": "Rava Upma", "instructions": ["Roast semolina", "Sauté veg and aromatics", "Cook with water"] },
+                "rec-19": { "title": "Medu Vada", "instructions": ["Grind lentils", "Shape and deep fry", "Serve hot"] },
+                "rec-20": { "title": "Puttu & Kadala", "instructions": ["Steam puttu", "Prepare chickpea curry", "Serve together"] },
+                "rec-21": { "title": "Fish Curry", "instructions": ["Extract tamarind", "Cook fish in spice gravy", "Serve with rice"] },
+                "rec-22": { "title": "Ambur Biryani", "instructions": ["Cook meat", "Layer with samba rice", "Dum cook and serve"] },
+                "rec-23": { "title": "Country Chicken", "instructions": ["Roast spices", "Pressure cook chicken", "Serve with rice"] },
+                "rec-24": { "title": "Pallipalayam Chicken", "instructions": ["Sauté with red chilies", "Slow cook chicken", "Serve dry"] },
+                "rec-25": { "title": "Vatha Kuzhambu", "instructions": ["Extract tamarind", "Fry sundakkai", "Simmer and thicken"] },
+                "rec-26": { "title": "Curd Rice", "instructions": ["Mash cooked rice", "Mix with yogurt and milk", "Temper and serve"] },
+                "rec-27": { "title": "Idiyappam Stew", "instructions": ["Steam idiyappam", "Make veg stew with coconut", "Serve together"] },
+                "rec-28": { "title": "Kuzhi Paniyaram", "instructions": ["Prepare batter", "Cook in paniyaram pan", "Serve with chutney"] },
+                "rec-29": { "title": "Adai & Avial", "instructions": ["Grind lentil batter", "Cook adai on tawa", "Make mixed veg avial"] },
+                "rec-30": { "title": "Kothu Parotta", "instructions": ["Tear parottas", "Sauté with veg/gravy", "Mince and serve"] },
+                "rec-31": { "title": "Madurai Kari Dosa", "instructions": ["Cook meat keema", "Spread on dosa with egg", "Flip and grill"] },
+                "rec-32": { "title": "Appam & Stew", "instructions": ["Swirl appam batter", "Make creamy chicken stew", "Serve hot"] },
+                "rec-33": { "title": "Muttai Dosa", "instructions": ["Spread dosa batter", "Add egg and spices", "Cook until crispy"] },
+                "rec-34": { "title": "Keema Paratha", "instructions": ["Stuff dough with meat", "Roll and cook on tawa", "Serve with yogurt"] }
+            },
+            "shopping_list": { "title": "Shopping List", "items_to_buy": "{{count}} item to buy", "items_to_buy_plural": "{{count}} items to buy", "clear_all": "Clear All", "empty_state": "Shopping list is empty", "empty_subtitle": "Add missing items from recipes", "to_buy": "To Buy", "purchased": "Purchased" },
+            "recipe": { "voice_guide": "Voice Guide", "mark_cooked": "Mark as Cooked", "cooked_success": "Marked {{title}} as cooked!", "calories_added": "Calories added to today's log.", "missing_ingredients": "Add {{count}} missing item to shopping list", "missing_ingredients_plural": "Add {{count}} missing items to shopping list", "cooking_time": "{{minutes}} mins", "calories": "{{count}} kcal", "veg": "Veg", "non_veg": "Non-Veg", "match": "Match", "minutes_short": "min", "calories_short": "cal", "nutrition_title": "Nutrition per serving", "ingredients_title": "Ingredients", "instructions_title": "Cooking Instructions", "calories_label": "Calories", "protein_label": "Protein", "carbs_label": "Carbohydrates", "fat_label": "Fat", "added_to_shopping_list": "Added items to your list!", "grams": "g", "servings": "servings", "start_cooking": "Start Cooking" },
+            "stats": { "veg_days": "Veg Days", "non_veg_days": "Non-Veg Days", "total_calories": "Total Calories", "avg_daily": "Avg Daily", "cal_per_day": "cal/day", "diet_distribution": "Diet Distribution", "diet_subtitle": "Vegetarian vs Non-Vegetarian days", "daily_calories": "Daily Calories", "last_7_days": "Last 7 Days" },
+            "calorie_tracker": { "title": "Today's Calories", "subtitle": "Track your daily intake", "progress": "Progress", "of_goal": "of {{goal}} kcal", "goal_reached": "Daily goal reached!" },
+            "diet_calendar": { "title": "Diet Calendar", "subtitle": "Plan your veg & non-veg days", "set_diet": "Set Diet for {{date}}", "veg_day": "Vegetarian Day", "non_veg_day": "Non-Vegetarian Day" },
+            "profile": { "community_member": "Community Member", "update_success": "Profile updated successfully", "edit_profile": "Edit Profile", "display_name": "Display Name", "save_changes": "Save Changes", "account_preferences": "Account & Preferences", "diet_preference": "Diet Preference", "diet_desc": "Affects recommendations", "veg": "Veg", "non_veg": "Non-Veg", "app_language": "App Language", "measurement_system": "Measurement System", "metric": "Grams/ML", "imperial": "Cups", "device_display": "Device & Display", "notifications": "Push Notifications", "notifications_desc": "Meal reminders", "dark_mode": "Dark Mode", "smart_appliances": "Smart Appliances", "home_connect_desc": "Home Connect integration", "community": "Community", "share_toast": "App link copied to clipboard!", "tell_friend": "Tell a Friend", "rate_toast": "Redirecting to Store...", "rate_app": "Rate App", "secure_sync": "Secure Cloud Sync Active", "role": { "user": "Community Member", "admin": "Administrator" } }
+        }
+    },

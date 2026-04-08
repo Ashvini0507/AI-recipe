@@ -1,0 +1,376 @@
+{
+  "rec-1": {
+    "title": "Palak Paneer",
+    "instructions": [
+      "Blanch spinach leaves and puree with ginger and garlic",
+      "Heat butter in a pan and sauté onions until golden",
+      "Add tomatoes, cumin, and garam masala, cook until soft",
+      "Add spinach puree and simmer for 10 minutes",
+      "Add paneer cubes and cook for 5 minutes",
+      "Serve hot with rice or roti"
+    ]
+  },
+  "rec-2": {
+    "title": "Grilled Chicken",
+    "instructions": [
+      "Mix yogurt with spices, ginger, garlic, and lemon juice",
+      "Marinate chicken pieces for at least 2 hours",
+      "Preheat grill to medium-high heat",
+      "Grill chicken for 15-20 minutes until internal temp reaches 165°F",
+      "Let rest for 5 minutes before serving",
+      "Serve with salad and dip"
+    ]
+  },
+  "rec-3": {
+    "title": "Creamy Pasta Alfredo",
+    "instructions": [
+      "Cook pasta according to package directions",
+      "In a pan, melt butter and sauté minced garlic",
+      "Add milk, bring to a simmer, then stir in grated cheese until melted",
+      "Toss cooked pasta and sautéed bell peppers in the sauce",
+      "Season with salt and pepper",
+      "Garnish with parsley and serve hot"
+    ]
+  },
+  "rec-4": {
+    "title": "Fresh Garden Salad",
+    "instructions": [
+      "Chop all vegetables into bite-size pieces",
+      "Mix vegetables in a large bowl",
+      "Squeeze fresh lemon juice over the salad",
+      "Add salt and pepper to taste",
+      "Toss well to combine",
+      "Serve immediately"
+    ]
+  },
+  "rec-5": {
+    "title": "Chicken Biryani",
+    "instructions": [
+      "Marinate chicken with yogurt and spices for 30 minutes",
+      "Cook rice until 70% done, drain and set aside",
+      "Fry sliced onions until golden brown",
+      "In a pot, layer marinated chicken, then rice, then fried onions",
+      "Cover and cook on low heat for 25 minutes, then let it rest for 5 minutes",
+      "Mix gently and serve hot with raita"
+    ]
+  },
+  "rec-6": {
+    "title": "Margherita Pizza",
+    "instructions": [
+      "Prepare pizza dough and let it rise for 1 hour",
+      "Roll out dough into a circle and spread tomato sauce evenly",
+      "Add mozzarella cheese generously",
+      "Drizzle with garlic butter",
+      "Bake at 450°F for 12-15 minutes",
+      "Slice and serve hot"
+    ]
+  },
+  "rec-7": {
+    "title": "Tom Yum Soup",
+    "instructions": [
+      "Boil water with ginger and garlic",
+      "Add fish pieces and cook for 5 minutes",
+      "Add tomatoes and red chili, simmer for 10 minutes",
+      "Add lemon juice before serving",
+      "Garnish with coriander",
+      "Serve hot"
+    ]
+  },
+  "rec-8": {
+    "title": "Grilled Steak",
+    "instructions": [
+      "Season beef with salt, pepper, and garlic",
+      "Let it rest at room temperature for 30 minutes",
+      "Preheat grill to high heat and grill steak for 4-5 minutes per side",
+      "Add butter on top while resting",
+      "Let rest for 5 minutes",
+      "Slice and serve with vegetables"
+    ]
+  },
+  "rec-9": {
+    "title": "Sushi Rolls",
+    "instructions": [
+      "Cook sushi rice and season with vinegar",
+      "Slice fish and vegetables into thin strips",
+      "Place nori sheet on bamboo mat and spread rice evenly",
+      "Add fish and vegetables in the center",
+      "Roll tightly using the mat",
+      "Slice into pieces and serve with soy sauce"
+    ]
+  },
+  "rec-10": {
+    "title": "Classic Burger",
+    "instructions": [
+      "Form beef into patties and season well",
+      "Grill patties for 4 minutes per side",
+      "Toast burger buns lightly and add cheese on patty in last minute",
+      "Assemble: bun, patty, tomato, onion",
+      "Add your favorite sauce",
+      "Serve with fries"
+    ]
+  },
+  "rec-11": {
+    "title": "Dal Tadka",
+    "instructions": [
+      "Pressure cook lentils with turmeric until soft",
+      "Heat butter in a pan and splutter cumin seeds",
+      "Add chopped onions, ginger, garlic, and tomatoes, cook until soft",
+      "Add red chili and other spices to complete tempering",
+      "Pour this tempering over cooked lentils",
+      "Simmer for 5 minutes and serve hot with rice"
+    ]
+  },
+  "rec-12": {
+    "title": "Paneer Tikka",
+    "instructions": [
+      "Cut paneer and vegetables into cubes",
+      "Mix yogurt with all spices, ginger, garlic, and lemon juice",
+      "Marinate paneer and vegetables for 1 hour",
+      "Thread onto skewers alternating paneer and vegetables",
+      "Grill or bake at 400°F for 15-20 minutes, turning occasionally",
+      "Serve hot with mint chutney"
+    ]
+  },
+  "rec-13": {
+    "title": "Idli & Sambar",
+    "instructions": [
+      "Soak rice and lentils separately for 4-6 hours",
+      "Grind into a smooth batter and ferment overnight",
+      "Steam batter in idli molds for 10-12 minutes",
+      "Cook lentils with vegetables and tamarind pulp for sambar",
+      "Prepare tempering with mustard seeds and curry leaves, add to sambar",
+      "Serve hot idlis with sambar and coconut chutney"
+    ]
+  },
+  "rec-14": {
+    "title": "Bisi Bele Bath",
+    "instructions": [
+      "Cook rice and lentils together until soft",
+      "Sauté vegetables with bisi bele bath spice powder",
+      "Add tamarind pulp and salt",
+      "Mix cooked rice and lentils with vegetables",
+      "Add grated coconut and simmer for 5 minutes",
+      "Top with ghee and serve hot with papadum"
+    ]
+  },
+  "rec-15": {
+    "title": "Chicken Chettinad",
+    "instructions": [
+      "Roast dry spices and coconut, then grind into a paste",
+      "Heat oil and sauté onions, curry leaves, and ginger-garlic paste",
+      "Add tomatoes and cook until soft",
+      "Add chicken pieces and the prepared spice paste",
+      "Cook until chicken is tender and gravy thickens",
+      "Garnish with fresh coriander and serve hot with paratha or rice"
+    ]
+  },
+  "rec-16": {
+    "title": "Ven Pongal",
+    "instructions": [
+      "Dry roast moong dal until golden",
+      "Wash and cook rice and dal together in a pressure cooker until soft and mushy",
+      "Heat butter, splutter mustard seeds, cumin, curry leaves, and ginger",
+      "Add cashews and fry until golden",
+      "Pour the tempering over the pongal, mix well, and season with salt and pepper",
+      "Serve piping hot with coconut chutney and sambar"
+    ]
+  },
+  "rec-17": {
+    "title": "Crispy Dosa & Coconut Chutney",
+    "instructions": [
+      "Soak rice and lentils for 6-8 hours, grind into a batter, and ferment overnight",
+      "For chutney: blend coconut, green chili, and ginger into a paste",
+      "Prepare tempering with mustard seeds and curry leaves for the chutney",
+      "Heat a flat griddle until very hot, pour a ladle of batter, and spread thinly",
+      "Drizzle oil on edges and cook until golden and crispy",
+      "Serve hot with coconut chutney and sambar"
+    ]
+  },
+  "rec-18": {
+    "title": "Rava Upma",
+    "instructions": [
+      "Dry roast sooji on low heat until fragrant and set aside",
+      "Heat butter, splutter mustard seeds, cumin, curry leaves, green chili, and ginger",
+      "Add chopped onion, tomatoes, and diced vegetables, cook until soft",
+      "Add boiling water and salt, bring to a boil",
+      "Add roasted rava slowly while stirring continuously to avoid lumps",
+      "Cover and cook on low heat for 5 minutes, serve hot with coconut chutney"
+    ]
+  },
+  "rec-19": {
+    "title": "Medu Vada",
+    "instructions": [
+      "Soak urad dal for 3-4 hours, drain, and grind into a thick, fluffy batter",
+      "Add finely chopped onion, ginger, curry leaves, cumin, and salt",
+      "Mix vigorously to incorporate air, heat oil in a deep pan to 180°C",
+      "Shape batter into a donut shape with wet hands",
+      "Slide into hot oil and fry until golden brown, flipping once",
+      "Drain on paper towels and serve hot with chutney and sambar"
+    ]
+  },
+  "rec-20": {
+    "title": "Puttu & Kadala Curry",
+    "instructions": [
+      "Soak black chickpeas overnight and pressure cook until soft",
+      "Mix rice flour with grated coconut and salt, steam in slightly moist layers",
+      "For curry: heat oil, splutter mustard seeds and curry leaves",
+      "Sauté onions, ginger-garlic paste, tomatoes, and spices until thick",
+      "Add cooked chickpeas and coconut milk, simmer for 10 minutes",
+      "Garnish with coriander and serve steamed puttu with the rich kadala curry"
+    ]
+  },
+  "rec-21": {
+    "title": "Chettinad Fish Curry",
+    "instructions": [
+      "Extract tamarind juice and grind roasted spices and coconut into a paste",
+      "Heat sesame oil, splutter mustard seeds, fenugreek, curry leaves, and garlic",
+      "Sauté onions and tomatoes until mushy",
+      "Pour in tamarind extract, ground masala, and simmer until oil separates",
+      "Gently slide in washed fish pieces and cook covered for 5-7 minutes",
+      "Serve hot with steamed rice or idli"
+    ]
+  },
+  "rec-22": {
+    "title": "Ambur Mutton Biryani",
+    "instructions": [
+      "Soak rice and pressure cook mutton with ginger-garlic paste until tender",
+      "Heat oil/ghee, sauté whole spices, onions, and freshly ground ginger-garlic paste",
+      "Add red chili paste, chopped tomatoes, yogurt, herbs, and cook until oil separates",
+      "Add cooked mutton, stock, and adjust water for the rice",
+      "Bring to a boil, add drained rice, and check for salt",
+      "Cover and cook on low heat for 15 minutes, rest, and serve with onion raita"
+    ]
+  },
+  "rec-23": {
+    "title": "Nattu Kozhi Kulambu",
+    "instructions": [
+      "Dry roast and powder spices, and grind coconut with shallots into a paste",
+      "Heat sesame oil, splutter mustard seeds, curry leaves, and sauté shallots",
+      "Add ginger, garlic, and tomatoes, cook until mushy",
+      "Add chicken, turmeric, salt, and spice powder, roast for 5-8 minutes",
+      "Add water and pressure cook for 4-5 whistles until chicken is tender",
+      "Add coconut paste, simmer for 5 minutes, and serve hot"
+    ]
+  },
+  "rec-24": {
+    "title": "Pallipalayam Chicken",
+    "instructions": [
+      "Grate or crush garlic cloves roughly",
+      "Heat oil, splutter mustard seeds, and sauté shallots until translucent",
+      "Add crushed garlic, curry leaves, and deseeded dry red chilies",
+      "Add chicken and turmeric, fry until chicken changes color, and cook covered",
+      "Once chicken is tender, add thinly sliced fresh coconut pieces",
+      "Roast uncovered until chicken is completely dry and serve hot"
+    ]
+  },
+  "rec-25": {
+    "title": "Vatha Kuzhambu",
+    "instructions": [
+      "Extract tamarind juice and fry dried berries in sesame oil until crisp",
+      "In the same pan, temper mustard seeds, fenugreek, curry leaves, garlic, and shallots",
+      "Add chopped tomato (optional), sambar powder, and turmeric, mixing quickly",
+      "Pour in tamarind extract, salt, and boil until the gravy thickens",
+      "Add the fried berries and jaggery, simulate until oil floats",
+      "Serve with steamed rice and poriyal"
+    ]
+  },
+  "rec-26": {
+    "title": "Thayir Sadam (Curd Rice)",
+    "instructions": [
+      "Pressure cook rice until soft and mushy, mash well while hot",
+      "Let rice cool, then mix with yogurt, milk, and salt until creamy",
+      "For tempering: heat oil, splutter mustard seeds and urad dal until golden",
+      "Add finely chopped ginger, green chilies, and curry leaves, sauté briefly",
+      "Pour tempering over curd rice and mix gently",
+      "Garnish with pomegranate or carrots, serve chilled with pickle"
+    ]
+  },
+  "rec-27": {
+    "title": "Idiyappam & Vegetable Stew",
+    "instructions": [
+      "Mix boiling water into rice flour to form a smooth dough",
+      "Squeeze dough into steamer plates and steam for 8-10 minutes",
+      "For the stew: sauté whole spices, onions, ginger, green chilies, and curry leaves",
+      "Add carrots, potatoes, peas, and thin coconut milk, cook until tender",
+      "Add thick coconut milk on low heat without boiling",
+      "Serve hot stringy idiyappam with the creamy vegetable stew"
+    ]
+  },
+  "rec-28": {
+    "title": "Kuzhi Paniyaram",
+    "instructions": [
+      "Heat oil, splutter mustard seeds and chana dal",
+      "Sauté chopped onions, green chilies, and curry leaves until golden",
+      "Mix tempered ingredients and coriander leaves into leftover idli batter",
+      "Heat a paniyaram pan, add oil, and fill each cavity 3/4th with batter",
+      "Cook covered until the bottom is crispy, then flip and cook the other side",
+      "Serve hot with spicy tomato-garlic chutney"
+    ]
+  },
+  "rec-29": {
+    "title": "Adai & Avial",
+    "instructions": [
+      "Soak rice, mixed lentils, and red chilies, then grind into a thick batter",
+      "For avial: steam mixed vegetables with turmeric until just cooked",
+      "Grind coconut, chilies, cumin, add to vegetables, and stir in yogurt and coconut oil",
+      "Heat a griddle, spread adai batter thicker than a dosa, and drizzle with oil/ghee",
+      "Cook both sides of adai until deep golden and crispy",
+      "Serve hot adai with avial and jaggery"
+    ]
+  },
+  "rec-30": {
+    "title": "Veg Kothu Parotta",
+    "instructions": [
+      "Tear cooled parottas into bite-sized pieces",
+      "Heat oil in a wide pan, temper fennel seeds, curry leaves, and sauté onions",
+      "Add ginger-garlic paste, tomatoes, mixed vegetables, and spices, cook until tender",
+      "Pour in veg salna (curry sauce) and let it bubble, then add parotta pieces",
+      "Vigorously mince and stir-fry the mixture on high heat for a few minutes",
+      "Serve hot with onion raita and an extra side of salna"
+    ]
+  },
+  "rec-31": {
+    "title": "Madurai Kari Dosa",
+    "instructions": [
+      "Prepare mutton keema sukka by sautéing spices, onions, and minced meat until dry",
+      "Beat an egg in a small bowl with a pinch of salt and pepper",
+      "Spread a thick circle of dosa batter on a hot cast iron tawa and let cook slightly",
+      "Pour the beaten egg evenly over the dosa, then spoon the cooked keema on top",
+      "Carefully flip and cook the meat-egg side on medium heat until charred",
+      "Flip back, garnish with fresh coriander, and serve hot"
+    ]
+  },
+  "rec-32": {
+    "title": "Appam & Chicken Stew",
+    "instructions": [
+      "For Appam: Grind soaked rice with grated coconut and yeast, ferment for 8 hours",
+      "For the stew: Sauté whole spices, onions, ginger, and green chilies until soft",
+      "Add chicken, potatoes, and thin coconut milk, cook until tender",
+      "Reduce heat, pour in thick coconut milk without boiling, and turn off heat",
+      "Pour appam batter into a hot appachatti, swirl to coat, and cook covered until edges are crispy",
+      "Serve hot appam with the mildly spiced, creamy chicken stew"
+    ]
+  },
+  "rec-33": {
+    "title": "Muttai Dosa (Egg Dosa)",
+    "instructions": [
+      "Spread a thin layer of dosa batter on a hot tawa",
+      "Crack an egg slightly in a bowl and pour it in the center",
+      "Spread the egg evenly over the batter",
+      "Sprinkle chopped onion, green chili, and black pepper on top",
+      "Drizzle oil on edges and cook until the bottom is crispy and egg is cooked",
+      "Fold and serve hot with chutney"
+    ]
+  },
+  "rec-34": {
+    "title": "Chicken Keema Paratha",
+    "instructions": [
+      "Sauté minced chicken with onions and spices until well cooked",
+      "Make a smooth dough from wheat flour",
+      "Roll dough into small circles and place chicken stuffing in the center",
+      "Fold the edges into a ball, sealing the stuffing inside",
+      "Roll out again gently into a paratha shape",
+      "Cook on a hot tawa with ghee on both sides until golden and serve hot"
+    ]
+  }
+}
