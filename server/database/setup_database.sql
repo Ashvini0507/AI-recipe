@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS public.recipe_translations (
 -- 3. Create Profiles Table (Synced with Auth)
 CREATE TABLE IF NOT EXISTS public.profiles (
   id UUID REFERENCES auth.users NOT NULL PRIMARY KEY,
-  name TEXT,
+  full_name TEXT,
   email TEXT,
   preference TEXT DEFAULT 'veg',
   language_code TEXT DEFAULT 'en',
@@ -84,7 +84,7 @@ CREATE POLICY "Users can delete their own meal plans" ON public.meal_plans FOR D
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS trigger AS $$
 BEGIN
-  INSERT INTO public.profiles (id, name, email, preference, language_code)
+  INSERT INTO public.profiles (id, full_name, email, preference, language_code)
   VALUES (
     new.id, 
     new.raw_user_meta_data->>'full_name', 

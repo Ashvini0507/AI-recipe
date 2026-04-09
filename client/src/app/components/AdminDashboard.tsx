@@ -261,9 +261,9 @@ export const AdminDashboard: React.FC = () => {
                                                         <td className="p-5">
                                                             <div className="flex items-center gap-3">
                                                                 <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-black text-xs">
-                                                                    {(u.name || 'U').charAt(0).toUpperCase()}
+                                                                    {(u.full_name || u.name || 'U').charAt(0).toUpperCase()}
                                                                 </div>
-                                                                <span className="font-bold text-foreground">{u.name || 'N/A'}</span>
+                                                                <span className="font-bold text-foreground">{u.full_name || u.name || 'N/A'}</span>
                                                             </div>
                                                         </td>
                                                         <td className="p-5 text-sm text-foreground/80 font-medium">{u.email}</td>

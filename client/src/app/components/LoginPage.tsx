@@ -26,8 +26,7 @@ export const LoginPage: React.FC = () => {
         setMessage(null);
         try {
             await login(formData.email, formData.password);
-            // Explicitly navigate to home after login succeeds
-            navigate('/home', { replace: true });
+            // Redirection is handled by App.tsx (PublicRoute) when isAuthenticated becomes true
         } catch (err: any) {
             setMessage({ type: 'error', text: err.message || 'Login failed. Please check your credentials.' });
         } finally {

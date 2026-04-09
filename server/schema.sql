@@ -3,8 +3,11 @@
 -- 1. Profiles Table
 CREATE TABLE public.profiles (
   id UUID REFERENCES auth.users NOT NULL PRIMARY KEY,
-  name TEXT,
+  full_name TEXT,
+  email TEXT,
   language_code TEXT DEFAULT 'en',
+  preference TEXT,
+  calorie_goal INTEGER DEFAULT 2000,
   updated_at TIMESTAMP WITH TIME ZONE,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );

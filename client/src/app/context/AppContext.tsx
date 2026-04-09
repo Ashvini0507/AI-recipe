@@ -268,6 +268,8 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         homeConnect: false
       };
 
+      // Set user and auth state
+      localStorage.setItem('user', JSON.stringify(authenticatedUser));
       setUser(authenticatedUser);
       setIsAuthenticated(true);
       

@@ -99,7 +99,7 @@ exports.signup = async (req, res) => {
                 .from('profiles')
                 .upsert({
                     id: data.user.id,
-                    name: name,
+                    full_name: name,
                     email: email,
                     preference: preference || 'veg',
                     language_code: language || 'en',
@@ -145,46 +145,21 @@ exports.login = async (req, res) => {
             });
         }
 
-        // First, try to sign in normally
-        let { data: authData, error: authError } = await supabase.auth.signInWithPassword({
+        // Authenticate with Supabase
+        const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
             email,
             password
         });
-
-        // If login fails, check if it's because email is not confirmed
-        // and auto-confirm the user via admin API
+ 
         if (authError) {
-            const errMsg = authError.message?.toLowerCase() || '';
-            if (errMsg.includes('email not confirmed') || errMsg.includes('invalid login credentials')) {
-                // Try to find the user and confirm their email
-                try {
-                    const { data: userList } = await supabase.auth.admin.listUsers();
-                    const existingUser = userList?.users?.find(u => u.email === email);
-
-                    if (existingUser && !existingUser.email_confirmed_at) {
-                        console.log(`Auto-confirming email for user: ${email}`);
-                        await supabase.auth.admin.updateUserById(existingUser.id, {
-                            email_confirm: true
-                        });
-
-                        // Retry login after confirming
-                        const retry = await supabase.auth.signInWithPassword({ email, password });
-                        if (!retry.error) {
-                            authData = retry.data;
-                            authError = null;
-                        } else {
-                            throw new Error('Invalid email or password. Please check your credentials.');
-                        }
-                    } else {
-                        throw new Error('Invalid email or password. Please check your credentials.');
-                    }
-                } catch (adminErr) {
-                    if (adminErr.message.includes('Invalid email or password')) throw adminErr;
-                    throw new Error('Invalid email or password. Please check your credentials.');
-                }
-            } else {
-                throw authError;
+            console.error(`Login failed for ${email}:`, authError.message);
+            
+            // If it's a confirmation issue, provide a more helpful message
+            if (authError.message.toLowerCase().includes('email not confirmed')) {
+                throw new Error('Please confirm your email before logging in.');
             }
+            
+            throw new Error('Invalid email or password. Please check your credentials.');
         }
 
         // Fetch profile
@@ -202,7 +177,7 @@ exports.login = async (req, res) => {
             user: {
                 id: authData.user.id,
                 email: authData.user.email,
-                name: profile?.name || authData.user.raw_user_meta_data?.full_name || 'User',
+                name: profile?.full_name || authData.user.raw_user_meta_data?.full_name || 'User',
                 preference: profile?.preference || authData.user.raw_user_meta_data?.preference || 'veg',
                 language: profile?.language_code || authData.user.raw_user_meta_data?.language || 'en'
             }
