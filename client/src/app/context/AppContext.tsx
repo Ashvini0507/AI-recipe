@@ -268,6 +268,13 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         homeConnect: false
       };
 
+      // Clear any existing user data before logging in new user
+      setFavorites([]);
+      setCookedRecipes([]);
+      setDietCalendar([]);
+      setCalorieLogs([]);
+      setShoppingList([]);
+
       // Set user and auth state
       localStorage.setItem('user', JSON.stringify(authenticatedUser));
       setUser(authenticatedUser);
@@ -332,8 +339,30 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   };
 
   const logout = () => {
+    // Clear user and auth state
     setUser(null);
     setIsAuthenticated(false);
+
+    // Clear user-specific data from state
+    setFavorites([]);
+    setCookedRecipes([]);
+    setDietCalendar([]);
+    setCalorieLogs([]);
+    setShoppingList([]);
+
+    // Reset UI states
+    setCurrentTab('home');
+    setSelectedIngredients([]);
+    setSearchQuery('');
+    setSelectedRecipeId(null);
+
+    // Clear user-specific data from localStorage
+    localStorage.removeItem('user');
+    localStorage.removeItem('favorites');
+    localStorage.removeItem('cookedRecipes');
+    localStorage.removeItem('dietCalendar');
+    localStorage.removeItem('calorieLogs');
+    localStorage.removeItem('shoppingList');
   };
 
   const changeLanguage = async (language: string) => {

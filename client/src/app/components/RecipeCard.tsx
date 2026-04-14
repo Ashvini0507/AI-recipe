@@ -56,7 +56,7 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({ recipe, matchPercentage,
         {/* Match Percentage */}
         {matchPercentage !== undefined && matchPercentage > 0 && (
           <div className="absolute top-4 right-4 bg-white/10 backdrop-blur-xl px-4 py-2 rounded-2xl text-[11px] font-black shadow-2xl border border-white/20 uppercase tracking-tighter">
-            <span className="text-accent">{matchPercentage}% {t('recipe.match')}</span>
+            <span className="text-black">{matchPercentage}% {t('recipe.match')}</span>
           </div>
         )}
 

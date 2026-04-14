@@ -107,7 +107,9 @@ exports.signup = async (req, res) => {
                 });
             
             if (profileError) {
-                console.warn('Profile upsert warning:', profileError.message);
+                console.warn(`Profile upsert warning for ${email}:`, profileError.message);
+            } else {
+                console.log(`Profile created/updated for ${email}`);
             }
         }
 
@@ -154,12 +156,16 @@ exports.login = async (req, res) => {
         if (authError) {
             console.error(`Login failed for ${email}:`, authError.message);
             
-            // If it's a confirmation issue, provide a more helpful message
+            // Provide specific status codes or messages based on Supabase error
             if (authError.message.toLowerCase().includes('email not confirmed')) {
-                throw new Error('Please confirm your email before logging in.');
+                return res.status(401).json({ error: 'Please confirm your email before logging in.' });
             }
             
-            throw new Error('Invalid email or password. Please check your credentials.');
+            if (authError.message.toLowerCase().includes('invalid login credentials')) {
+                return res.status(401).json({ error: 'Invalid email or password. Please check your credentials or sign up if you haven\'t already.' });
+            }
+
+            return res.status(401).json({ error: authError.message || 'Authentication failed' });
         }
 
         // Fetch profile

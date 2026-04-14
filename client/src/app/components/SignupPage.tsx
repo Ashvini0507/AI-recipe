@@ -19,6 +19,8 @@ export const SignupPage: React.FC = () => {
         preference: 'veg' as 'veg' | 'non-veg',
         language: i18n.language
     });
+    const [isLoading, setIsLoading] = useState(false);
+    const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
 
     const handleLanguageChange = (lang: string) => {
         i18n.changeLanguage(lang);
@@ -27,6 +29,8 @@ export const SignupPage: React.FC = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setIsLoading(true);
+        setMessage(null);
         try {
             await signup(
                 formData.name,
@@ -35,10 +39,17 @@ export const SignupPage: React.FC = () => {
                 formData.preference,
                 formData.language
             );
+            setMessage({ type: 'success', text: 'Account created successfully! Redirecting to login...' });
+            
             // Redirect to login after successful signup
-            navigate('/login');
-        } catch (error) {
+            setTimeout(() => {
+                navigate('/login');
+            }, 2000);
+        } catch (error: any) {
             console.error('Signup failed:', error);
+            setMessage({ type: 'error', text: error.message || 'Signup failed. Please try again.' });
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -91,6 +102,14 @@ export const SignupPage: React.FC = () => {
                         <h1 className="text-3xl font-black text-foreground tracking-tighter leading-none mb-3 drop-shadow-xl">{t('auth.signup')}</h1>
                         <p className="text-muted-foreground text-[10px] font-black uppercase tracking-[0.3em] opacity-60">{t('auth.subtitle')}</p>
                     </div>
+
+                    {message && (
+                        <div className={`mb-6 p-4 rounded-2xl text-xs font-bold uppercase tracking-wider ${
+                            message.type === 'success' ? 'bg-primary/10 text-primary border border-primary/20' : 'bg-destructive/10 text-destructive border border-destructive/20'
+                        }`}>
+                            {message.text}
+                        </div>
+                    )}
 
                     <form onSubmit={handleSubmit} className="space-y-4" id="signup-form">
                         <div className="space-y-3">
@@ -175,10 +194,17 @@ export const SignupPage: React.FC = () => {
                         <Button
                             id="signup-submit-btn"
                             type="submit"
-                            className="w-full bg-primary hover:bg-primary/90 text-white rounded-[1.5rem] h-16 text-lg font-black uppercase tracking-widest shadow-2xl shadow-primary/20 transition-all active:scale-95 mt-8 group relative overflow-hidden"
+                            disabled={isLoading}
+                            className="w-full bg-primary hover:bg-primary/90 text-white rounded-[1.5rem] h-16 text-lg font-black uppercase tracking-widest shadow-2xl shadow-primary/20 transition-all active:scale-95 mt-8 group relative overflow-hidden disabled:opacity-70"
                         >
-                            <span className="relative z-10">{t('auth.signup')}</span>
-                            <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                            {isLoading ? (
+                                <div className="w-6 h-6 border-3 border-white/30 border-t-white rounded-full animate-spin" />
+                            ) : (
+                                <>
+                                    <span className="relative z-10">{t('auth.signup')}</span>
+                                    <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                                </>
+                            )}
                         </Button>
                     </form>
 
