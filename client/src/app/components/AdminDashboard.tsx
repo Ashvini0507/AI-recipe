@@ -40,7 +40,7 @@ export const AdminDashboard: React.FC = () => {
         e.preventDefault();
         setIsSubmitting(true);
         try {
-            const response = await fetch('http://localhost:5000/api/recipes', {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/recipes`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -82,7 +82,7 @@ export const AdminDashboard: React.FC = () => {
             const fetchUsers = async () => {
                 setIsLoadingUsers(true);
                 try {
-                    const response = await fetch('http://localhost:5000/api/user');
+                    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user`);
                     if (!response.ok) throw new Error('Failed to fetch users');
                     const data = await response.json();
                     setUsers(data);

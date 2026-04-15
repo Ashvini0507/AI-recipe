@@ -153,7 +153,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     const fetchRecipes = async () => {
       try {
         const lang = i18n.language || 'en';
-        const response = await fetch(`http://localhost:5000/api/recipes?lang=${lang}`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/recipes?lang=${lang}`);
         if (!response.ok) throw new Error('Failed to fetch recipes');
         const data = await response.json();
         if (data && data.length > 0) {
@@ -206,7 +206,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     if (user) {
       localStorage.setItem('user', JSON.stringify(user));
       // Fetch user's diet calendar when logged in
-      fetch(`http://localhost:5000/api/meal-plans/${user.id}`)
+      fetch(`${import.meta.env.VITE_API_URL}/api/meal-plans/${user.id}`)
         .then(res => res.json())
         .then(data => {
           if (Array.isArray(data)) {
@@ -246,7 +246,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   // Auth functions
   const login = async (email: string, password: string) => {
     try {
-      const response = await fetch('http://localhost:5000/api/user/login', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -300,7 +300,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     language: string
   ) => {
     try {
-      const response = await fetch('http://localhost:5000/api/user/signup', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password, preference, language })
@@ -320,7 +320,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
 
   const forgotPassword = async (email: string) => {
     try {
-      const response = await fetch('http://localhost:5000/api/user/forgot-password', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user/forgot-password`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email })
@@ -372,7 +372,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
 
       // Sync with backend if authenticated
       try {
-        await fetch(`http://localhost:5000/api/user/${user.id}/language`, {
+        await fetch(`${import.meta.env.VITE_API_URL}/api/user/${user.id}/language`, {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ languageCode: language })
@@ -390,7 +390,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
 
       // Sync with optional backend
       try {
-        await fetch(`http://localhost:5000/api/user/${user.id}/settings`, {
+        await fetch(`${import.meta.env.VITE_API_URL}/api/user/${user.id}/settings`, {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(settings)
@@ -445,7 +445,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     // Save to backend
     if (user) {
       try {
-        await fetch(`http://localhost:5000/api/meal-plans/${user.id}`, {
+        await fetch(`${import.meta.env.VITE_API_URL}/api/meal-plans/${user.id}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ date, mealType: type })
